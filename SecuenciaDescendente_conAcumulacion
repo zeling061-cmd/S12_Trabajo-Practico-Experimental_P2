@@ -1,0 +1,21 @@
+Algoritmo SecuenciaDescendenteAcumulacion
+    Definir i, sumaPares, sumaImpares Como Entero
+    
+    sumaPares <- 0
+    sumaImpares <- 0
+    
+    Escribir "Secuencia descendente del 20 al 1:"
+    
+    Para i <- 20 Hasta 1 Con Paso -1 Hacer
+        Escribir i
+        
+        Si (i MOD 2 = 0) Entonces
+            sumaPares <- sumaPares + i
+        SiNo
+            sumaImpares <- sumaImpares + i
+        FinSi
+    FinPara
+    
+    Escribir "Suma total de números pares: ", sumaPares
+    Escribir "Suma total de números impares: ", sumaImpares
+FinAlgoritmo
