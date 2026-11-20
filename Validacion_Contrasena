@@ -1,18 +1,19 @@
 Algoritmo ValidacionContrasena
-    Definir contrasena, contrasenaCorrecta, intentos, maxIntentos Como Entero
+    Definir pass, contCorrecta, intentos, maxIntentos Como Entero
     Definir accesoConcedido Como Logico
     
-    contrasenaCorrecta <- 12345
+    contCorrecta <- 12345
     maxIntentos <- 3
     intentos <- 0
     accesoConcedido <- Falso
     
     Mientras (intentos < maxIntentos) Y (NO accesoConcedido) Hacer
+		//mientras solo continua si la cantidad de intentos es menor a 3
         intentos <- intentos + 1
         Escribir "Ingrese la contraseña (Intento ", intentos, " de ", maxIntentos, "):"
-        Leer contrasena
+        Leer pass
         
-        Si contrasena = contrasenaCorrecta Entonces
+        Si pass = contCorrecta Entonces
             accesoConcedido <- Verdadero
             Escribir "Acceso concedido"
         SiNo
