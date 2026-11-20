@@ -1,6 +1,7 @@
 Algoritmo SecuenciaDescendenteAcumulacion
     Definir i, sumaPares, sumaImpares Como Entero
     
+	//ambos acumuladores deben estar en 0
     sumaPares <- 0
     sumaImpares <- 0
     
@@ -9,6 +10,7 @@ Algoritmo SecuenciaDescendenteAcumulacion
     Para i <- 20 Hasta 1 Con Paso -1 Hacer
         Escribir i
         
+		//En cada vuelta se evalua i MOD 2=0
         Si (i MOD 2 = 0) Entonces
             sumaPares <- sumaPares + i
         SiNo
