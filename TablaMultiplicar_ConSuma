@@ -1,24 +1,20 @@
 Algoritmo TablaMultiplicarConSuma
-    Definir numero, inicio, fin, i, resultado, sumaResultados Como Entero
-    
-    sumaResultados <- 0
-    
-    Escribir "Ingrese el número entero para la tabla de multiplicar:"
-    Leer numero
-    
-    Escribir "Ingrese el número de inicio de la tabla:"
-    Leer inicio
-    
-    Escribir "Ingrese el número final de la tabla:"
-    Leer fin
-    
-    Escribir "Tabla de multiplicar del ", numero, " (desde ", inicio, " hasta ", fin, "):"
-    
-    Para i <- inicio Hasta fin Con Paso 1 Hacer
-        resultado <- numero * i
-        Escribir numero, " x ", i, " = ", resultado
-        sumaResultados <- sumaResultados + resultado
-    FinPara
-    
-    Escribir "La suma de todos los resultados obtenidos es: ", sumaResultados
+	Definir num, inicio, end, i, resultado, sumaResultados Como Entero
+	// para evitar valores indefinidos se pone en 0
+	sumaResultados <- 0
+	Escribir 'Ingrese el número entero para la tabla de multiplicar:'
+	Leer num
+	Escribir 'Ingrese el número de inicio de la tabla:'
+	Leer inicio
+	Escribir 'Ingrese el número final de la tabla:'
+	Leer end
+	Escribir 'Tabla de multiplicar del ', num, ' (desde ', inicio, ' hasta ', end, '):'
+	Para i<-inicio Hasta end Con Paso 1 Hacer
+		// Calcular el producto
+		resultado <- num*i
+		Escribir num, ' x ', i, ' = ', resultado
+		// se suma el producto al acumulador
+		sumaResultados <- sumaResultados+resultado
+	FinPara
+	Escribir 'La suma de todos los resultados obtenidos es: ', sumaResultados
 FinAlgoritmo
